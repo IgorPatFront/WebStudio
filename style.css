@@ -25,14 +25,12 @@ header {
     justify-content: space-between;
 }
 
-
 .studio_left {
     /* background: cornflowerblue; */
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .studio_left_cont {
@@ -52,7 +50,6 @@ header {
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.03em;
-
 }
 
 .studio_span {
@@ -257,13 +254,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-
 
 .globo_Image_cont div {
     position: relative;
-
     height: 294px;
     max-width: 370px;
     width: 100%;
@@ -537,6 +531,7 @@ p.text_studio_p {
 
 .text_input input {
     background: #2F303A;
+    color: white;
     height: 48px;
     width: 358px;
     font-size: 16px;
@@ -548,7 +543,6 @@ p.text_studio_p {
 
 .text_input input::placeholder {
     color: rgba(255, 255, 255, 0.6);
-
 }
 
 .con_button {
@@ -706,9 +700,9 @@ p.text_studio_p {
         display: none;
     }
 
-    .studio_right {
+    /* .studio_right {
         display: none;
-    }
+    } */
 
     .mobileMenu {
         display: block;
@@ -719,15 +713,92 @@ p.text_studio_p {
         right: 23px;
         top: 22px;
     }
-
+    .mobileMenu.open{
+        position: fixed;
+    }
     .mobileMenu span {
         display: block;
+        position: absolute;
         height: 3px;
         width: 100%;
         background: black;
+        left: 0;
+        transition: 1s all;
     }
 
+    .mobileMenu span:nth-child(1) {
+        top: 0;
 
+    }
+
+    .mobileMenu span:nth-child(2),
+    .mobileMenu span:nth-child(3) {
+        top: 8px;
+    }
+
+    .mobileMenu span:nth-child(4) {
+        top: 16px;
+    }
+
+    .mobileMenu.open span:nth-child(1),
+    .mobileMenu.open span:nth-child(4) {
+        top: 8px;
+        left: 50%;
+        width: 0;
+        opacity: 0;
+    }
+    
+
+    .mobileMenu.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    
+    .mobileMenu.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
+    header.open .studio_left p {
+        display: flex;
+        position: fixed;
+        height: 20px;
+        z-index: 10;
+        top: 20px;
+        left: 30vw;
+    }
+    header.open .studio_left p:nth-child(2) {
+        top: 40px;
+    }
+    header.open .studio_left p:nth-child(3) {
+        top: 60px;
+    }
+    
+
+      header .studio_right {
+          top: 0;
+         
+          right: -80vw;
+          width: 80vw;
+          height: 101vh;
+          background: rgb(179, 179, 179);
+  
+          display: flex;
+          position: fixed;
+          transition: all 1s;
+      }
+  .studio_mobBlock {
+      align-items:center ;
+      position: absolute;
+      bottom:15px ;
+      width: 100%;
+      margin:0;
+  }
+  .contMobHeader {
+     margin:0 !important;
+  }
+      header.open .studio_right {
+          right: 0;
+  
+      }
     /* ------------header-End----------- */
     .text_overlay {
         width: 360px;
@@ -752,27 +823,58 @@ p.text_studio_p {
         width: 100%;
     }
 
+    .detali_description h3 {
+        text-align: center;
+    }
+
+
+
+
     /* ------------------------ */
+
+    .con_svg_carts {
+        margin-bottom: 24px;
+    }
+
     .carts {
-        height: 622px;
-        width: 450px;
+        height: auto;
+        width: calc(100vw - 30px);
         margin: 15px auto;
     }
 
     .carts img {
-        height: 460px;
+        height: 87vh;
         width: 100%;
     }
-    /* ------------------------ */
 
-    footer{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
+    /* ------------------------ */
+    .global_cliente h3 {
+        text-align: center;
     }
+
+    .con_globo_img div {
+        flex: 1 40%;
+    }
+
+    /* -------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .con_studio {
+        margin-bottom: 45px;
+    }
+
+    .text_input {
+        margin-bottom: 30px;
+    }
+
     .text_input input {
-       width: 430px;
+        margin: 0 15px;
+        width: calc(100vw - 45px);
     }
 }
 
