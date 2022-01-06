@@ -761,13 +761,15 @@ p.text_studio_p {
     }
     header.open .studio_left p {
         left: 30vw;
-        color:aqua;        
+        color:rgb(16, 236, 236);        
     }
     
     header .studio_right{
         background: url(./monitor.png) 0 0 / 100% 100% no-repeat;
         width: 80vw;
         height: 101vh;
+        height: 100%;
+        width: 100%;
     }
     header .studio_left p:nth-child(2) {
         top: 100px;
@@ -840,7 +842,7 @@ p.text_studio_p {
     }
 
     .carts img {
-        height: 87vh;
+        height: 77vh;
         width: 100%;
     }
 
