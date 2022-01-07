@@ -106,7 +106,7 @@ header {
 
 }
 
-body header .contMobHeader p {
+header .contMobHeader p {
     font-size: 14px;
     font-weight: 500;
     color: #757575 ;
@@ -759,10 +759,10 @@ p.text_studio_p {
         font-size: 22px;
         font-family: 'Rubik', sans-serif;
         transition: all 1s;
+        color: #212121;     
     }
-    header .studio_left p {
+    header.open .studio_left p {
         left: 30vw;
-       color: #212121;     
     }
     
   
