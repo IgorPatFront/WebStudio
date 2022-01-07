@@ -106,10 +106,10 @@ header {
 
 }
 
-.contMobHeader p {
+body header .contMobHeader p {
     font-size: 14px;
     font-weight: 500;
-    color: #757575;
+    color: #757575 ;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
 }
@@ -760,7 +760,7 @@ p.text_studio_p {
         font-family: 'Rubik', sans-serif;
         transition: all 1s;
     }
-    header.open .studio_left p {
+    header .studio_left p {
         left: 30vw;
        color: #212121;     
     }
