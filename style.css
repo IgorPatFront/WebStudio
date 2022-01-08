@@ -784,7 +784,9 @@ p.text_studio_p {
          padding-bottom: 50vh;
          
       }
+
   .studio_mobBlock {
+    opacity: 1;
       align-items:center ;
       position: fixed;
       bottom:15px ;
@@ -792,6 +794,9 @@ p.text_studio_p {
       margin:0;
       bottom: 4vh;
      
+  }
+  header.open .studio_mobBlock{
+      opacity: 0;
   }
   .contMobHeader {
      margin:0 !important;
