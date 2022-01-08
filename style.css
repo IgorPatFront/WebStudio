@@ -786,7 +786,7 @@ p.text_studio_p {
       }
 
   .studio_mobBlock {
-    opacity: 1;
+    opacity: 0;
       align-items:center ;
       position: fixed;
       bottom:15px ;
@@ -796,7 +796,7 @@ p.text_studio_p {
      
   }
   header.open .studio_mobBlock{
-      opacity: 0;
+      opacity: 1;
   }
   .contMobHeader {
      margin:0 !important;
